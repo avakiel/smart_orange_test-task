@@ -1,0 +1,20 @@
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.arrow {
+  display: block;
+  background-image: url(../../img/ico-shape.png);
+  width: 17.21px;
+  height: 8px;
+  background-size: cover;
+
+  &-rotate {
+
+    transform: rotate(180deg);
+  }
+}

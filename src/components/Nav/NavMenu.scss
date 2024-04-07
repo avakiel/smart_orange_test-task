@@ -1,0 +1,32 @@
+.nav {
+    &__item {
+        cursor: pointer;
+        
+        &::before,
+        &::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background-color: transparent;
+            transition: background-color 0.3s ease;
+        }
+    
+        &::before {
+            top: 0;
+        }
+    
+        &::after {
+            bottom: 0;
+        }
+    
+        &:hover {
+
+            &::before,
+            &::after {
+                background-color: #000; 
+            }
+        }
+    }
+}
