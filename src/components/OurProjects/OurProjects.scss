@@ -206,6 +206,14 @@
       color: white;
       font-size: 64px;
       font-weight: 700;
+      
+      @include onSmallPhone {
+        font-size: 28px;
+      }
+    }
+
+    @include onSmallPhone {
+      padding: 15px 38px;
     }
   }
 
