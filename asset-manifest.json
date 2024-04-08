@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/smart_orange_test-task/static/css/main.b1026db4.css",
+    "main.css": "/smart_orange_test-task/static/css/main.fa49349d.css",
     "main.js": "/smart_orange_test-task/static/js/main.d4285050.js",
     "static/media/pr_1.png": "/smart_orange_test-task/static/media/pr_1.9c4b6fdc1e941612eaa5.png",
     "static/media/pr_2.png": "/smart_orange_test-task/static/media/pr_2.7bd806d0ed411842d8cd.png",
@@ -16,11 +16,11 @@
     "static/media/bottom.png": "/smart_orange_test-task/static/media/bottom.4bd631ccf1cb0b635ff2.png",
     "index.html": "/smart_orange_test-task/index.html",
     "static/media/arrow-white.svg": "/smart_orange_test-task/static/media/arrow-white.dca24ef0afe6ec964a15.svg",
-    "main.b1026db4.css.map": "/smart_orange_test-task/static/css/main.b1026db4.css.map",
+    "main.fa49349d.css.map": "/smart_orange_test-task/static/css/main.fa49349d.css.map",
     "main.d4285050.js.map": "/smart_orange_test-task/static/js/main.d4285050.js.map"
   },
   "entrypoints": [
-    "static/css/main.b1026db4.css",
+    "static/css/main.fa49349d.css",
     "static/js/main.d4285050.js"
   ]
 }
