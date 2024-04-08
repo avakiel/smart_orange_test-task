@@ -1,5 +1,6 @@
 import React from "react";
 import "./Contacts.scss";
+import { Button } from "../Button/Button";
 
 export const Contacts = () => {
   return (
@@ -30,11 +31,7 @@ export const Contacts = () => {
           <span className="contacts_agr">Отправляя заявку Вы соглашаетесь с политикой конфиденциальности</span>
         </p>
       </div>
-      <div className="contacts_button">
-        <div>
-          ОТПРАВИТЬ <span className="arrow"></span>
-        </div>
-      </div>
+      <Button containerClass="contacts_button"  content="ОТПРАВИТЬ" arrowSide="right"/>
     </div>
   );
 };

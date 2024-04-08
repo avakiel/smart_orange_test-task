@@ -1,3 +1,11 @@
+@import '../../mixins/adaptive-rules.scss';
+
+@mixin responsiveBackground {
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
 .ourProjects {
   display: flex;
   flex-direction: column;
@@ -5,22 +13,53 @@
   width: 100%;
   height: 765px;
 
+  @include onTablet {
+    height: 100%;
+  }
+
+  @include onSmallPhone {
+    height: 100%;
+    margin-top: 60px;
+  }
+
+
   &_title {
     height: 64px;
     font-size: 64px;
     color: #bdbdbd;
+
+    @include onSmallPhone {
+      font-size: 32px;
+      height: 100%;
+    }
   }
 
   &_gallery {
     margin-top: 60px;
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 30px;
+
+    @include onSmallPhone {
+      margin-top: 30px;
+      gap: 10px;
+    }
 
     &-top {
       display: flex;
       flex-direction: row;
       gap: 30px;
+
+      @include onTablet {
+        width: 100%;
+        flex-direction: column;
+      }
+
+      @include onSmallPhone {
+        width: 100%;
+        flex-direction: column;
+      }
 
       &-pic1 {
         background-image: url("../../img/bg-1.png");
@@ -28,6 +67,14 @@
         width: 570px;
         height: 255px;
         overflow: hidden;
+
+        @include onTablet {
+          @include responsiveBackground();
+        }
+
+        @include onSmallPhone {
+          @include responsiveBackground();
+        }
       }
 
       &-pic2 {
@@ -36,6 +83,14 @@
         background-size: cover;
         width: 570px;
         height: 255px;
+
+        @include onTablet {
+          @include responsiveBackground();
+        }
+
+        @include onSmallPhone {
+          @include responsiveBackground();
+        }
       }
     }
 
@@ -44,12 +99,30 @@
       flex-direction: row;
       gap: 30px;
 
+      @include onTablet {
+        flex-direction: column;
+        width: 100%;
+      }
+
+      @include onSmallPhone {
+        flex-direction: column;
+        width: 100%;
+      }
+
       &-pic1 {
         background-image: url("../../img/image\ 16.png");
         background-repeat: no-repeat;
         background-size: cover;
         width: 270px;
         height: 255px;
+
+        @include onTablet {
+          @include responsiveBackground();
+        }
+
+        @include onSmallPhone {
+          @include responsiveBackground();
+        }
       }
 
       &-pic2 {
@@ -58,6 +131,14 @@
         background-size: cover;
         width: 470px;
         height: 255px;
+
+        @include onTablet {
+          @include responsiveBackground();
+        }
+
+        @include onSmallPhone {
+          @include responsiveBackground();
+        }
       }
 
       &-pic3 {
@@ -66,6 +147,15 @@
         background-size: cover;
         width: 370px;
         height: 255px;
+
+        @include onTablet {
+          @include responsiveBackground();
+        }
+
+        @include onSmallPhone {
+          @include responsiveBackground();
+        }
+
       }
     }
   }
@@ -76,6 +166,10 @@
     height: 71px;
     align-self: flex-end;
     background-color: #333333;
+
+    @include onSmallPhone {
+      align-self: center;
+    }
 
     > div {
       display: flex;
@@ -89,7 +183,6 @@
         z-index: 2;
         background-image: url("../../img/arrow-white.svg");
         margin-left: 12px;
-        margin-top: -1%;
       }
     }
   }

@@ -1,7 +1,14 @@
+@import '../../../mixins/adaptive-rules.scss';
+
 .projectGallery {
     position: relative;
     height: 100%;
     width: 100%;
+
+    @include onSmallPhone {
+        height: 300px;
+    }
+
    
     &-img {
         width: 100%;
@@ -20,6 +27,13 @@
         height: 71px;
 
         text-transform: uppercase;
+
+        @include onSmallPhone {
+            width: 150px;
+            height: 45px;
+
+            font-size: 14px;
+        }
     }
 
     &-button:hover {

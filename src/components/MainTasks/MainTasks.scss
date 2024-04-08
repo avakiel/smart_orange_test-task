@@ -1,7 +1,18 @@
+@import '../../mixins/adaptive-rules.scss';
+
 .mainTasks {
   margin-top: 120px;
   width: 100%;
   height: 268px;
+
+  @include onTablet {
+    margin-top: 0px;
+  }
+
+  @include onSmallPhone {
+    margin-top: 40px;
+    height: 100%;
+  }
 
   &__title {
     display: flex;
@@ -11,15 +22,29 @@
     font-size: 64px;
     color: #bdbdbd;
     font-weight: 300;
+
+    @include onSmallPhone {
+      height: 32px;
+      font-size: 32px;
+    }
   }
 
   &__option {
     display: flex;
     flex-direction: row;
+    gap: 187px;
 
     margin-top: 20px;
 
-    gap: 187px;
+    @include onTablet {
+      gap: 70px;
+    }
+
+    @include onSmallPhone {
+      gap: 50px;
+      flex-direction: column;
+    }
+
 
     &__one {
       display: flex;
@@ -27,23 +52,50 @@
       gap: 30px;
 
       height: 200px;
-      width: 413px;
+
+      @include onTablet {
+        height: 130px;
+      }
+
+      @include onSmallPhone {
+        height: 80px;
+      }
+
 
       &-num {
         line-height: 200px;
         font-size: 200px;
         font-weight: 900;
         color: #f2f2f2;
+
+        
+      @include onTablet {
+        font-size: 130px;
+        line-height: 130px;
+      }
+
+      @include onSmallPhone {
+        font-size: 80px;
+        line-height: 80px;
+      }
       }
 
       &-text {
         display: flex;
         align-items: center;
-        width: 279px;
+        width: 100%;
 
         font-size: 22px;
         font-weight: 400;
         color: #333333;
+
+        @include onTablet {
+          font-size: 16px;
+        }
+
+        @include onSmallPhone {
+          font-size: 14.5px;
+        }
       }
     }
 
@@ -53,23 +105,49 @@
       gap: 30px;
 
       height: 200px;
-      width: 570px;
+
+      @include onTablet {
+        height: 130px;
+      }
+
+      @include onSmallPhone {
+        height: 80px;
+      }
 
       &-num {
         line-height: 200px;
         font-size: 200px;
         font-weight: 900;
         color: #f2f2f2;
+
+           
+      @include onTablet {
+        font-size: 130px;
+        line-height: 130px;
+      }
+
+      @include onSmallPhone {
+        font-size: 80px;
+        line-height: 80px;
+      }
       }
 
       &-text {
         display: flex;
         align-items: center;
-        width: 420px;
+        width: 100%;
 
         font-size: 22px;
         font-weight: 400;
         color: #333333;
+
+        @include onTablet {
+          font-size: 16px;
+        }
+
+        @include onSmallPhone {
+          font-size: 14.5px;
+        }
       }
     }
   }

@@ -1,3 +1,5 @@
+@import '../../mixins/adaptive-rules.scss';
+
 .contacts {
   margin-top: 120px;
   width: 100%;
@@ -9,45 +11,43 @@
   &_title {
     font-size: 64px;
     color: #bdbdbd;
+
+    @include onSmallPhone {
+      font-size: 32px;
+    }
   }
 
   &_button {
     margin-top: 21px;
     width: 222px;
     height: 71px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    color: white;
+    gap: 12px;
+
     background-color: #333333;
-    cursor: pointer;
 
     > div {
-        display: flex;
-        flex-direction: row;
-       align-items: center;
-        height: 24px;
-        font-size: 12px;
-        color: white;
-
-        > span {
-            background-image: url("../../img/arrow-white.svg");
-            margin-left: 12px;
-            margin-top: -1%;
-        }
+      > span {
+        background-image: url(../../img/arrow-white.svg);
+      }
     }
-}
-&_button:hover {
+  }
+  &_button:hover {
     background-color: #515151;
-}
+  }
 
   &_content {
-
     &-gallery {
-        background-image: url('../../img/image\ 12\ \(1\).png');
-        background-repeat: no-repeat;
-        background-size: cover;
-        width: 749px;
-        height: 385px;
+      background-image: url("../../img/image\ 12\ \(1\).png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      width: 749px;
+      height: 385px;
+
+      @include onSmallPhone {
+        display: none;
+      }
     }
     margin-top: 22px;
 
@@ -76,24 +76,35 @@
       > input {
         width: 391px;
         height: 46px;
+
+        @include onSmallPhone {
+          width: 100%;
+        }
+      }
+
+      @include onSmallPhone {
+        width: 100%;
       }
     }
 
     &-check {
-        margin-top: 22px;
-        width: 391px;
+      margin-top: 22px;
+      width: 391px;
 
-        display: flex;
+      display: flex;
 
-        > p {
-
-            > span {
-                margin-left: 10px;
-            }
+      @include onSmallPhone {
+        width: 100%;
+      }
+      > p {
+        > span {
+          margin-left: 10px;
         }
-
-
+      }
     }
   }
 
+  @include onSmallPhone {
+    height: 100%;
+  }
 }
