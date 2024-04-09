@@ -5,66 +5,66 @@ import { Button } from "../Button/Button";
 export default function OurProjects() {
   return (
     <div className="ourProjects">
-      <div className="ourProjects_title">Наши проекты</div>
-      <div className="ourProjects_gallery">
-        <div className="ourProjects_gallery-top">
-          <div className="ourProjects_gallery-top-pic1 pic__content">
-            <div className="pic__content-main pic__content-big">
+      <div className="ourProjects__title">Наши проекты</div>
+      <div className="ourProjects__gallery">
+        <div className="ourProjects__gallery__top">
+          <div className="ourProjects__gallery__top-pic1 pic__content">
+            <div className="pic__content__main pic__content-big">
               <div>
                 ДОСУГОВЫЙ <br /> ЦЕНТР
               </div>
                 <Button
-                containerClass="pic__content-main-button"
+                containerClass="pic__content__main-button"
                 arrowSide="right"
                 content="подробнее"
                 />
             </div>
           </div>
-          <div className="ourProjects_gallery-top-pic2 pic__content">
-          <div className="pic__content-main pic__content-big">
+          <div className="ourProjects__gallery__top-pic2 pic__content">
+          <div className="pic__content__main pic__content-big">
               <div>
                 ДОСУГОВЫЙ <br /> ЦЕНТР
               </div>
                 <Button
-                containerClass="pic__content-main-button"
+                containerClass="pic__content__main-button"
                 arrowSide="right"
                 content="подробнее"
                 />
             </div>
           </div>
         </div>
-        <div className="ourProjects_gallery-bottom">
-          <div className="ourProjects_gallery-bottom-pic1 pic__content">
-          <div className="pic__content-main pic__content-small">
+        <div className="ourProjects__gallery__bottom">
+          <div className="ourProjects__gallery__bottom-pic1 pic__content">
+          <div className="pic__content__main pic__content-small">
               <div>
                 ДОСУГОВЫЙ <br /> ЦЕНТР
               </div>
                 <Button
-                containerClass="pic__content-main-button"
+                containerClass="pic__content__main-button"
                 arrowSide="right"
                 content="подробнее"
                 />
             </div>
           </div>
-          <div className="ourProjects_gallery-bottom-pic2 pic__content">
-          <div className="pic__content-main pic__content-small">
+          <div className="ourProjects__gallery__bottom-pic2 pic__content">
+          <div className="pic__content__main pic__content-small">
               <div>
                 ДОСУГОВЫЙ <br /> ЦЕНТР
               </div>
                 <Button
-                containerClass="pic__content-main-button"
+                containerClass="pic__content__main-button"
                 arrowSide="right"
                 content="подробнее"
                 />
             </div>
           </div>
-          <div className="ourProjects_gallery-bottom-pic3 pic__content">
-          <div className="pic__content-main pic__content-small">
+          <div className="ourProjects__gallery__bottom-pic3 pic__content">
+          <div className="pic__content__main pic__content-small">
               <div>
                 ДОСУГОВЫЙ <br /> ЦЕНТР
               </div>
                 <Button
-                containerClass="pic__content-main-button"
+                containerClass="pic__content__main-button"
                 arrowSide="right"
                 content="подробнее"
                 />
@@ -72,7 +72,7 @@ export default function OurProjects() {
           </div>
         </div>
       </div>
-      <Button containerClass="ourProjects_button"  content="все проекты" arrowSide="right"/>
+      <Button containerClass="ourProjects__button"  content="все проекты" arrowSide="right"/>
     </div>
   );
 }
