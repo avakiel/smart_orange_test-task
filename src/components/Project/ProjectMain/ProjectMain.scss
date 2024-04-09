@@ -1,83 +1,114 @@
-@import '../../../mixins/adaptive-rules.scss';
+@import "../../../mixins/adaptive-rules.scss";
 
 .projectMain {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 100%;
-    gap: 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  gap: 90px;
+
+  @include onTablet {
+    gap: 40px;
+  }
+
+  @include onSmallPhone {
+    gap: 10px;
+    align-items: center;
+    height: 200px;
+  }
+
+  &__title {
+    width: 100%;
+    text-transform: uppercase;
+    font-size: 64px;
 
     @include onTablet {
-      gap: 40px;
+      font-size: 45px;
     }
 
     @include onSmallPhone {
-      gap: 10px;
-      align-items: center;
-      height: 200px;
+      text-align: center;
+      font-size: 20px;
     }
-  
-    &__title {
-      width: 100%;
-      text-transform: uppercase;
-      font-size: 64px;
 
-      @include onTablet {
-        font-size: 45px;
-      }
-
-      @include onSmallPhone {
-        text-align: center;
-        font-size: 20px;
-      }
-  
-      &-main {
-        font-weight: 300;
-        color: #bdbdbd;
-      }
-  
-      &-text {
-        font-weight: 600;
-        color: #333333;
-      }
-    }
-  
-    &__controlls {
-      position: relative;
-      display: flex;
-      flex-direction: row;
-      gap: 23px;
-
-      @include onTablet {
-        gap: 15px;
-      }
-  
-      &-button {
-        width: 53px;
-        height: 53px;
-        border: 1px solid #f2f2f2;
-      }
-  
-      &-button:hover {
-        background-color: #f2f2f2;
-      }
-    }
-  
-    &__pages {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      gap: 32px;
-  
-      font-weight: 400;
-      font-size: 24px;
+    &-main {
+      font-weight: 300;
       color: #bdbdbd;
-  
-      &-divide {
-        width: 44px;
-        height: 2px;
-        background-color: #bdbdbd;
-        transform: rotate(134deg);
-      }
+    }
+
+    &-text {
+      font-weight: 600;
+      color: #333333;
     }
   }
+
+  &__controlls {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    gap: 23px;
+
+    @include onTablet {
+      gap: 15px;
+    }
+
+    &-button {
+      width: 53px;
+      height: 53px;
+      border: 1px solid #f2f2f2;
+      position: relative;
+    }
+
+  
+
+    &-button:hover {
+      background-color: #f2f2f2;
+    }
+  }
+
+  &__pages {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 150px;
+    font-weight: 400;
+    font-size: 24px;
+    color: #bdbdbd;
+
+    @include onSmallPhone {
+      margin-top: 20px;
+      font-size: 18px;
+    }
+
+    &-current,
+    &-total {
+      width: 40px;
+    }
+
+    &-divide {
+      flex-grow: 1;
+      height: 2px;
+      background-color: #bdbdbd;
+      transform: rotate(134deg);
+    }
+  }
+}
+
+.line::before {
+  content: '';
+  width: 330px;
+  height: 1px;
+  position: absolute;
+  background-color: #F2F2F2;
+  transform: translateY(-50%);
+  top: 50%;
+  left: 131px;
+
+  @include onTablet {
+    left: 125px;
+  }
+
+  @include onSmallPhone {
+    display: none;
+  }
+}

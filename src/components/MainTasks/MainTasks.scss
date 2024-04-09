@@ -67,7 +67,6 @@
         font-size: 200px;
         font-weight: 900;
         color: #f2f2f2;
-
         
       @include onTablet {
         font-size: 130px;
@@ -77,6 +76,7 @@
       @include onSmallPhone {
         font-size: 80px;
         line-height: 80px;
+        width: 60px;
       }
       }
 
@@ -94,7 +94,7 @@
         }
 
         @include onSmallPhone {
-          font-size: 14.5px;
+          font-size: 15px;
         }
       }
     }
@@ -119,7 +119,6 @@
         font-size: 200px;
         font-weight: 900;
         color: #f2f2f2;
-
            
       @include onTablet {
         font-size: 130px;
@@ -129,6 +128,7 @@
       @include onSmallPhone {
         font-size: 80px;
         line-height: 80px;
+        width: 60px;
       }
       }
 
@@ -146,7 +146,7 @@
         }
 
         @include onSmallPhone {
-          font-size: 14.5px;
+          font-size: 15px;
         }
       }
     }

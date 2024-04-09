@@ -26,8 +26,8 @@ export const ProjectMain: React.FC<projectMainProps> = ({
         <div onClick={() => handleChangePage(-1)}>
           <Button arrowSide="left" containerClass="projectMain__controlls-button"/>
         </div>
-        <div onClick={() => handleChangePage(1)}>
-          <Button arrowSide="right" containerClass="projectMain__controlls-button" />
+        <div onClick={() => handleChangePage(1)} className="line">
+          <Button arrowSide="right" containerClass="projectMain__controlls-button"/>
         </div>
       </div>
       <div className="projectMain__pages">

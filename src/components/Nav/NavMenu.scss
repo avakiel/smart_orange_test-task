@@ -1,6 +1,7 @@
 .nav {
     &__item {
         cursor: pointer;
+        letter-spacing: 2px;
         
         &::before,
         &::after {

@@ -206,10 +206,18 @@
       color: white;
       font-size: 64px;
       font-weight: 700;
+
+      @include onTablet {
+        font-size: 28px;
+      }
       
       @include onSmallPhone {
         font-size: 28px;
       }
+    }
+
+    @include onTablet {
+      padding: 15px 38px;
     }
 
     @include onSmallPhone {

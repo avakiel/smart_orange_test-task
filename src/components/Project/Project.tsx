@@ -14,16 +14,21 @@ export const Project = () => {
   const [gallery, setGallery] = useState(img);
 
   const handleChangePage = (num: number) => {
-    if (page >= 1 &&  page < gallery.length && num > 0) {
-      setPage(curr => curr + 1)
-    } else if (page === gallery.length && num > 0) {
-      setPage(1)
-    } else if (page > 1 && num < 0) {
-      setPage(curr => curr - 1)
-    } else if (page === 1 && num < 0) {
-      setPage(content.length)
+    if (num > 0) {
+      if (page < gallery.length) {
+        setPage(curr => curr + 1);
+      } else {
+        setPage(1);
+      }
+    } else if (num < 0) {
+      if (page > 1) {
+        setPage(curr => curr - 1);
+      } else {
+        setPage(content.length);
+      }
     }
   };
+  
 
   return (
     <div className="project">

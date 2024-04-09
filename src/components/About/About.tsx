@@ -14,7 +14,7 @@ export const About = () => {
         </div>
         <div className="about__main">
             <div className="about__main-title">О компании</div>
-            <div className="about__main-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam voluptatibus debitis laboriosam a eum ea deleniti, reiciendis nobis vel tenetur ut expedita incidunt quod, error distinctio hic molestiae laborum omnis pariatur assumenda! Facere vitae illo repellat pariatur, debitis architecto cupiditate necessitatibus sed ullam veniam qui cum, asperiores voluptatem iure in quae, labore commodi atque nihil molestias aliquam. Porro odit accusantium sunt culpa veritatis eaque, dolorem quidem animi recusandae, ratione officia?</div>
+            <div className="about__main-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</div>
             <Button containerClass='about__main-button' content='читать' arrowSide='right' />
         </div>
     </div>
